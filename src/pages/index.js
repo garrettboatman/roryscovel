@@ -45,7 +45,7 @@ const IndexPage = ({data}) => {
         <div className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]">
           <StaticImage
             src="../images/Rory_Scovel_TheLastTour_1.jpg"
-            className={`mx-2 h-[100%] ${ticketHover && `hidden`}`}
+            className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
             loading="eager"
             objectFit="contain"
             quality={95}
@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
           />
           <StaticImage
             src="../images/Rory_Scovel_TheLastTour_2.jpg"
-            className={`mx-2 h-[100%] ${!ticketHover && `hidden`}`}
+            className={`mx-2 h-[100%] ${!ticketHover ? `!hidden` : ``}`}
             loading="eager"
             objectFit="contain"
             quality={95}
@@ -105,7 +105,7 @@ const IndexPage = ({data}) => {
     <div className="py-5 pb-8 md:py-[100px] max-w-[500px] mx-auto">
       <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-xl mx-auto py-6">
         <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
-        <h3 className="text-lg md:text-xl text-center"><a className="text-[#000] no-underline uppercase" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>
+        <h3 className="text-md md:text-lg text-center"><a className="text-[#000] no-underline uppercase" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>
       </div>
     </div>
   </Layout>
