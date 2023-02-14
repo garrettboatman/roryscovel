@@ -36,12 +36,13 @@ function Seo({ description, title, children }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const SEOtitle = defaultTitle ? title === 'Home' ? defaultTitle : `${defaultTitle} | ${title}` : title;
 
   return (
     <>
-      <title>{defaultTitle ? title === 'Home' ? defaultTitle : `${defaultTitle} | ${title}` : title}</title>
+      <title>{title}</title>
       <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={SEOtitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${URL}${ogImage.images.fallback.src}`} />
@@ -51,7 +52,7 @@ function Seo({ description, title, children }) {
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={SEOtitle} />
       <meta name="twitter:description" content={metaDescription} />
       {children}
     </>
