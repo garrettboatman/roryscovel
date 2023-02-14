@@ -40,7 +40,7 @@ function Seo({ description, title, children }) {
 
   return (
     <>
-      <title>{title}</title>
+      <title>{SEOtitle}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={SEOtitle} />
       <meta property="og:description" content={metaDescription} />
