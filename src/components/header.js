@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
         <div className={`bg-text h-[4px] mb-[5px] transition-all ${menuOpen ? `opacity-0` : ``}`}></div>
         <div className={`bg-text h-[4px] mb-[5px] transition-all ${menuOpen ? `-rotate-45 translate-y-[-9px]` : ``}`}></div>
       </a>
-      <div className={`absolute transition-all position-absolute translate-x-[200px] opacity-0 overflow-hidden w-0 right-[-20px] md:right-[-30px] top-[40px] z-50 bg-[#fff6e5] shadow-lg ${menuOpen ? `w-auto !translate-x-[0px] opacity-100` : ``}`}>
+      <div className={`absolute transition-all position-absolute translate-x-[200px] opacity-0 overflow-hidden w-0 right-[-20px] md:right-[-30px] top-[40px] rounded-lg z-50 bg-[#fff6e5] shadow-lg ${menuOpen ? `w-auto !translate-x-[0px] opacity-100` : ``}`}>
         <nav className="p-[20px]">
           <ol className="list-none uppercase text-[20px] text-right">
             <li><a onClick={() => scrollTo('#tickets')} className="no-underline font-bold text-text p-1 inline-block hover:opacity-25 transition-all cursor-pointer">Tickets</a></li>

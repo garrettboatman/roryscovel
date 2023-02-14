@@ -8,7 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, title, children, siteUrl }) {
+function Seo({ description, title, children }) {
   const { site, featuredImage } = useStaticQuery(
     graphql`
       query {

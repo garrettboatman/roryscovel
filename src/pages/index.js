@@ -1,11 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
-import StickyBox from "react-sticky-box"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 import Apple from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Apple.svg"
 import Youtube from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Youtube.svg"
 import Patreon from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Patreon.svg"
@@ -76,8 +73,8 @@ const IndexPage = ({data}) => {
       </div>
     </div>
     <div id="penpals" className="pt-10 pb-14 md:py-[100px] md:mt-[100px] content-container max-w-[1200px">
-      <h2 className="font-bold text-3xl text-center uppercase ">Pen Pals</h2>
-      <h3 className="text-lg md:text-2xl text-center"><a className="text-[#000] no-underline uppercase" href="https://penpalspod.com">PenPalsPod.com</a></h3>
+      <h2 className="font-bold text-3xl text-center uppercase ">PenPals</h2>
+      <h3 className="text-md md:text-xl text-center"><a className="text-[#000] no-underline uppercase" href="https://penpalspod.com">PenPalsPod.com</a></h3>
       <div className="flex max-w-xl mx-auto mt-3">
         <div className="flex-1 pr-1 md:pr-3">
           <StaticImage
@@ -102,8 +99,8 @@ const IndexPage = ({data}) => {
         </div>
       </div>
     </div>
-    <div id="contact" className="py-5 pb-8 md:py-[100px] max-w-[500px] mx-auto">
-      <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-xl mx-auto py-6">
+    <div id="contact" className="py-5 pb-8 md:py-[100px] max-w-[420px] mx-auto">
+      <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-lg mx-auto py-6">
         <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
         <h3 className="text-md md:text-lg text-center"><a className="text-[#000] no-underline uppercase" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>
       </div>
