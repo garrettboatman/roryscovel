@@ -63,7 +63,7 @@ const IndexPage = ({data}) => {
         </div>
       </div>
       <div id="tickets" className="w-full flex justify-start">
-        <div className="w-full md:min-w-[380px] md:max-w-[430px] md:px-4">
+        <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
           <div className="my-2">
             {data.allContentfulShow.nodes.map(data => (
               <Show setTicketHover={setTicketHover} key={data.contentful_id} data={data} />
@@ -74,7 +74,7 @@ const IndexPage = ({data}) => {
     </div>
     <div id="penpals" className="pt-10 pb-14 md:py-[100px] md:mt-[100px] content-container max-w-[1200px">
       <h2 className="font-bold text-3xl text-center uppercase ">PenPals</h2>
-      <h3 className="text-md md:text-xl text-center"><a className="text-[#000] no-underline uppercase" href="https://penpalspod.com">PenPalsPod.com</a></h3>
+      <h3 className="text-md md:text-xl text-center"><a className="text-[#000] no-underline uppercase transition-all hover:opacity-40" href="https://penpalspod.com">PenPalsPod.com</a></h3>
       <div className="flex max-w-xl mx-auto mt-3">
         <div className="flex-1 pr-1 md:pr-3">
           <StaticImage
@@ -87,13 +87,13 @@ const IndexPage = ({data}) => {
           />
         </div>
         <div className="flex-1 pl-1 md:pr-3 flex justify-center flex-col">
-          <div className="w-full bg-white flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
+          <div className="w-full bg-white flex rounded-lg border-[#CCC] border overflow-hidden border-solid transition-all hover:scale-110">
             <a aria-label="Listen on Apple Podcasts" href="https://podcasts.apple.com/us/podcast/the-pen-pals-podcast/id1400536434"><Apple className="w-full" /></a>
           </div>
-          <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
+          <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid transition-all hover:scale-110">
           <a aria-label="Subscribe on Patreon" href="https://www.patreon.com/penpals"><Patreon className="w-full" /></a>
           </div>
-          <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
+          <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid transition-all hover:scale-110">
           <a aria-label="Watch on YouTube" href="https://www.youtube.com/playlist?list=PLvCb1y9SFPQxNpoc4SjwwC1-lztk5d5cn"><Youtube className="w-full" /></a>
           </div>
         </div>
@@ -102,7 +102,7 @@ const IndexPage = ({data}) => {
     <div id="contact" className="py-5 pb-8 md:py-[100px] max-w-[420px] mx-auto">
       <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-lg mx-auto py-6">
         <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
-        <h3 className="text-md md:text-lg text-center"><a className="text-[#000] no-underline uppercase" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>
+        <h3 className="text-md md:text-lg text-center"><a className="text-[#000] no-underline uppercase transition-all hover:opacity-40" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>
       </div>
     </div>
   </Layout>
