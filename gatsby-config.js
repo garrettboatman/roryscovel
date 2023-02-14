@@ -14,12 +14,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Rory Scovel | Comedian`,
+    title: `Rory Scovel`,
     description: `“The Last Tour” 🎟️ TICKETS AVAILABLE NOW!`,
     author: `@roryscovel`,
-    siteUrl: `https://roryscovel.com/`,
+    siteUrl: `https://roryscovel.gatsbyjs.io`, //Todo: Change this
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

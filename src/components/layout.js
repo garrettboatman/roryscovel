@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         >
           <div className="mt-[50px] md:mt-[100px] w-[300px] left-[-20px] md:w-[500px] mx-auto content-container relative text-center">
             
-            <a href="#" className="absolute top-[-25px] left-[220px] md:top-[-25px] md:left-[380px]">
+            <a href="#" className="absolute top-[-25px] left-[220px] md:top-[-28px] md:left-[380px] hover:scale-125 transition-all">
               <StaticImage
                 src="../images/insta.png"
                 className={`w-[27px] z-10`}
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="#" className="absolute top-[-10px] left-[250px] md:top-[-5px] md:left-[412px]">
+            <a href="#" className="absolute top-[-10px] left-[250px] md:top-[-10px] md:left-[415px] hover:scale-125 transition-all">
               <StaticImage
                 src="../images/youtube.png"
                 className={`w-[27px] z-10`}
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="#" className="absolute top-[22px] left-[263px] md:top-[28px] md:left-[437px]">
+            <a href="#" className="absolute top-[22px] left-[263px] md:top-[25px] md:left-[439px] hover:scale-125 transition-scale">
               <StaticImage
                 src="../images/twitter.png"
                 className={`w-[27px] z-10`}
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="#" className="absolute top-[50px] left-[255px] md:top-[60px] md:left-[443px]">
+            <a href="#" className="absolute top-[50px] left-[255px] md:top-[63px] md:left-[445px] hover:scale-125 transition-all">
               <StaticImage
                 src="../images/spotify.png"
                 className={`w-[27px] z-10`}
@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="#" className="absolute top-[82px] left-[243px] md:top-[97px] md:left-[433px]">
+            <a href="#" className="absolute top-[82px] left-[243px] md:top-[105px] md:left-[435px] hover:scale-125 transition-all">
               <StaticImage
                 src="../images/imdb.png"
                 className={`w-[27px] z-10`}

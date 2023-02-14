@@ -8,8 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, title, children }) {
-  const { site } = useStaticQuery(
+function Seo({ description, title, children, siteUrl }) {
+  const { site, featuredImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -17,22 +17,38 @@ function Seo({ description, title, children }) {
             title
             description
             author
+            siteUrl
+          }
+        }
+        featuredImage: file(
+          absolutePath: { glob: "**/src/images/Rory_Scovel_TheLastTour.png" }
+        ) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 1080)
           }
         }
       }
     `
   )
 
+  const ogImage = featuredImage?.childImageSharp?.gatsbyImageData;
+  const URL = site.siteMetadata?.siteUrl
+
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
   return (
     <>
-      <title>{defaultTitle ? title === 'Home' ? defaultTitle : `${title} | ${defaultTitle}` : title}</title>
+      <title>{defaultTitle ? title === 'Home' ? defaultTitle : `${defaultTitle} | ${title}` : title}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={`${URL}${ogImage.images.fallback.src}`} />
+      <meta property="og:image:width" content={ogImage.width} />
+      <meta property="og:image:height" content={ogImage.height} />
+      <meta property="og:image" content=""/>
+
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
