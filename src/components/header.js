@@ -30,8 +30,6 @@ const Header = ({ siteTitle }) => {
         </nav>
       </div>
     </div>
-    
-    
   </header>
   )
 }

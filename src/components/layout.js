@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         >
           <div className="mt-[50px] md:mt-[100px] w-[300px] left-[-20px] md:w-[500px] mx-auto content-container relative text-center">
             
-            <a href="https://www.instagram.com/roryscovel" className="absolute top-[-25px] left-[220px] md:top-[-28px] md:left-[380px] hover:scale-125 transition-all">
+            <a href="https://www.instagram.com/roryscovel" className="absolute z-10 top-[-25px] left-[220px] md:top-[-28px] md:left-[380px] hover:animate-spin">
               <StaticImage
                 src="../images/insta.png"
                 className={`w-[27px] z-10`}
@@ -50,10 +50,10 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="https://www.youtube.com/c/OfficialRoryScovel" className="absolute top-[-10px] left-[250px] md:top-[-10px] md:left-[415px] hover:scale-125 transition-all">
+            <a href="https://www.youtube.com/c/OfficialRoryScovel" className="absolute z-10 top-[-10px] left-[250px] md:top-[-10px] md:left-[415px] hover:animate-spin">
               <StaticImage
                 src="../images/youtube.png"
-                className={`w-[27px] z-10`}
+                className={`w-[27px] relative`}
                 quality={95}
                 placeholder="none"
                 formats={["auto", "webp", "avif"]}
@@ -61,10 +61,10 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="https://twitter.com/thepenpalspod" className="absolute top-[22px] left-[263px] md:top-[25px] md:left-[439px] hover:scale-125 transition-scale">
+            <a href="https://twitter.com/thepenpalspod" className="absolute z-10 top-[22px] left-[263px] md:top-[25px] md:left-[439px] hover:animate-spin">
               <StaticImage
                 src="../images/twitter.png"
-                className={`w-[27px] z-10`}
+                className={`w-[27px]`}
                 quality={95}
                 placeholder="none"
                 formats={["auto", "webp", "avif"]}
@@ -72,10 +72,10 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="https://open.spotify.com/artist/1PflWU7nPUElTWqYUBkK6W" className="absolute top-[50px] left-[255px] md:top-[63px] md:left-[445px] hover:scale-125 transition-all">
+            <a href="https://open.spotify.com/artist/1PflWU7nPUElTWqYUBkK6W" className="absolute z-10 top-[50px] left-[255px] md:top-[63px] md:left-[445px] hover:animate-spin">
               <StaticImage
                 src="../images/spotify.png"
-                className={`w-[27px] z-10`}
+                className={`w-[27px]`}
                 quality={95}
                 placeholder="none"
                 formats={["auto", "webp", "avif"]}
@@ -83,10 +83,10 @@ const Layout = ({ children }) => {
               />
             </a>
 
-            <a href="https://www.imdb.com/name/nm2665168/" className="absolute top-[82px] left-[243px] md:top-[105px] md:left-[435px] hover:scale-125 transition-all">
+            <a href="https://www.imdb.com/name/nm2665168/" className="absolute z-10 top-[82px] left-[243px] md:top-[105px] md:left-[435px] hover:animate-spin">
               <StaticImage
                 src="../images/imdb.png"
-                className={`w-[27px] z-10`}
+                className={`w-[27px]`}
                 quality={95}
                 placeholder="none"
                 formats={["auto", "webp", "avif"]}
@@ -96,7 +96,7 @@ const Layout = ({ children }) => {
 
             <StaticImage
               src="../images/RoryScovel-doggo.jpg"
-              className={` mx-auto`}
+              className={`relative z-1 mx-auto`}
               quality={95}
               placeholder="none"
               formats={["auto", "webp", "avif"]}

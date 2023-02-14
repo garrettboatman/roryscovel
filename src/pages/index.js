@@ -19,11 +19,11 @@ const Show = ({ data, setTicketHover }) => {
     <div className="bg-[#F1E4CB] my-4 md:rounded-lg">
       <div className="flex py-4 px-5 items-center justify-between">
         <div className="text-lg leading-tight">
-          <div className="font-bold text-xl mb-[3px]">{date} {time !== "12AM" && <span className="font-normal text-sm">({time})</span>}</div>
+          <div className="text-xl tracking-tight mb-[3px]">{date} {time !== "12AM" && <span className="font-normal text-sm">({time})</span>}</div>
           <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">{data.venue}</div>
           <div className="uppercase font-bold">{data.city}</div>
         </div>
-        <div><a onFocus={() => setTicketHover(true)} onBlur={() => setTicketHover(false)} onMouseOver={() => setTicketHover(true)} onMouseOut={() => setTicketHover(false)} className="button text-md px-5 py-2" href={data.ticketLink}>Tickets</a></div>
+        <div><a onFocus={() => setTicketHover(true)} onBlur={() => setTicketHover(false)} onMouseOver={() => setTicketHover(true)} onMouseOut={() => setTicketHover(false)} className="button text-md px-5 py-2 transition-all hover:scale-[1.2]" href={data.ticketLink}>Tickets</a></div>
       </div>
     </div>
   )
@@ -88,13 +88,13 @@ const IndexPage = ({data}) => {
         </div>
         <div className="flex-1 pl-1 md:pr-3 flex justify-center flex-col">
           <div className="w-full bg-white flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
-            <a href="https://podcasts.apple.com/us/podcast/the-pen-pals-podcast/id1400536434"><Apple className="w-full" /></a>
+            <a aria-label="Listen on Apple Podcasts" href="https://podcasts.apple.com/us/podcast/the-pen-pals-podcast/id1400536434"><Apple className="w-full" /></a>
           </div>
           <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
-          <a href="https://www.patreon.com/penpals"><Patreon className="w-full" /></a>
+          <a aria-label="Subscribe on Patreon" href="https://www.patreon.com/penpals"><Patreon className="w-full" /></a>
           </div>
           <div className="bg-white mt-4 flex rounded-lg border-[#CCC] border overflow-hidden border-solid">
-          <a href="https://www.youtube.com/playlist?list=PLvCb1y9SFPQxNpoc4SjwwC1-lztk5d5cn"><Youtube className="w-full" /></a>
+          <a aria-label="Watch on YouTube" href="https://www.youtube.com/playlist?list=PLvCb1y9SFPQxNpoc4SjwwC1-lztk5d5cn"><Youtube className="w-full" /></a>
           </div>
         </div>
       </div>
