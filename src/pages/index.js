@@ -6,8 +6,8 @@ import Seo from "../components/seo"
 import Apple from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Apple.svg"
 import Youtube from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Youtube.svg"
 import Patreon from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Patreon.svg"
+import { useSpringCarousel } from 'react-spring-carousel'
 
-console.log();
 
 const Show = ({ data, setTicketHover }) => {
 
@@ -33,7 +33,99 @@ const IndexPage = ({data}) => {
   console.log('data', data);
   
   const [ticketHover, setTicketHover] = React.useState(false);
-  console.log('data', ticketHover);
+
+  const { carouselFragment, slideToPrevItem, slideToNextItem } = useSpringCarousel({
+    itemsPerSlide: 1,
+    withLoop: true,
+    items: [
+      {
+        id: 1,
+        renderItem: (
+        <div className="flex justify-center w-full px-2"><div>
+          <StaticImage
+            src='../images/art_1.jpg'
+            className="max-w-[400px] md:max-w-[500px] rounded-lg"
+            loading="eager"
+            objectFit="contain"
+            imgStyle={{ borderRadius: '10px' }}
+            quality={95}
+            placeholder="none"
+            formats={["auto", "webp", "avif"]}
+            alt=""
+          />
+        </div></div>
+        )
+      },
+      {
+        id: 2,
+        renderItem: (
+          <div className="flex justify-center w-full px-2"><div>
+            <StaticImage
+              src='../images/art_2.jpg'
+              className="max-w-[400px] md:max-w-[500px] rounded-lg"
+              loading="eager"
+              objectFit="contain"
+              imgStyle={{ borderRadius: '10px' }}  quality={95}
+              placeholder="none"
+              formats={["auto", "webp", "avif"]}
+              alt=""
+            />
+        </div></div>
+        )
+      },
+      {
+        id: 3,
+        renderItem: (
+          <div className="flex justify-center w-full px-2"><div>
+            <StaticImage
+              src='../images/art_3.jpg'
+              className="max-w-[400px] md:max-w-[500px] rounded-lg"
+              loading="eager"
+              objectFit="contain"
+              imgStyle={{ borderRadius: '10px' }}  quality={95}
+              placeholder="none"
+              formats={["auto", "webp", "avif"]}
+              alt=""
+            />
+          </div></div>
+        )
+      },
+      {
+        id: 4,
+        renderItem: (
+          <div className="flex justify-center w-full px-2"><div>
+            <StaticImage
+              src='../images/art_4.jpg'
+              className="max-w-[400px] md:max-w-[500px] rounded-lg"
+              loading="eager"
+              objectFit="contain"
+              imgStyle={{ borderRadius: '10px' }}  quality={95}
+              placeholder="none"
+              formats={["auto", "webp", "avif"]}
+              alt=""
+            />
+          </div></div>
+        )
+      },
+      {
+        id: 5,
+        renderItem: (
+          <div className="flex justify-center w-full px-2"><div>
+            <StaticImage
+              src='../images/art_5.jpg'
+              className="max-w-[400px] md:max-w-[500px] rounded-lg"
+              loading="eager"
+              objectFit="contain"
+              imgStyle={{ borderRadius: '10px' }}  quality={95}
+              placeholder="none"
+              formats={["auto", "webp", "avif"]}
+              alt=""
+            />
+          </div></div>
+        )
+      }
+    ]
+  });
 
   return (
   <Layout>
@@ -45,7 +137,6 @@ const IndexPage = ({data}) => {
             className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
             loading="eager"
             objectFit="contain"
-            quality={95}
             placeholder="none"
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -55,7 +146,6 @@ const IndexPage = ({data}) => {
             className={`mx-2 h-[100%] ${!ticketHover ? `!hidden` : ``}`}
             loading="eager"
             objectFit="contain"
-            quality={95}
             placeholder="none"
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -72,10 +162,10 @@ const IndexPage = ({data}) => {
         </div>
       </div>
     </div>
-    <div id="penpals" className="pt-10 pb-14 md:py-[100px] md:mt-[100px] content-container max-w-[1200px">
+    <div id="penpals" className="my-20 md:my-[200px] content-container max-w-[1200px">
       <h2 className="font-bold text-3xl text-center uppercase ">PenPals</h2>
       <h3 className="text-md md:text-xl text-center"><a className="text-[#000] no-underline uppercase transition-all hover:opacity-40" href="https://penpalspod.com">PenPalsPod.com</a></h3>
-      <div className="flex max-w-xl mx-auto mt-3">
+      <div className="flex max-w-xl mx-auto mt-6 md:mt-10">
         <div className="flex-1 pr-1 md:pr-3">
           <StaticImage
             src="../images/pen_pals.jpg"
@@ -99,7 +189,24 @@ const IndexPage = ({data}) => {
         </div>
       </div>
     </div>
-    <div id="contact" className="py-5 pb-8 md:py-[100px] max-w-[420px] mx-auto">
+    <div id="art" className="overflow-hidden my-20 md:my-[200px] content-container max-w-[1200px">
+      <h2 className="font-bold text-3xl text-center uppercase ">Art</h2>
+      <h3 className="text-md md:text-xl text-center">GALLERY OPENING SOON</h3>
+      <div className="relative flex mt-6 md:mt-10">
+        <button className="z-10" onClick={slideToPrevItem}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-12 md:w-20 h-12 md:h-20 rounded-lg">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+        </button>
+        {carouselFragment}
+        <button className="z-10" onClick={slideToNextItem}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-12 md:w-20 h-12 md:h-20 rounded-lg">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="contact" className="py-5 max-w-[420px] mx-auto">
       <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-lg mx-auto py-6">
         <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
         <h3 className="text-md md:text-lg text-center"><a className="text-[#000] no-underline uppercase transition-all hover:opacity-40" href="mailto:Andrew.skikne@unitedtalent.com">Andrew.skikne@unitedtalent.com</a></h3>

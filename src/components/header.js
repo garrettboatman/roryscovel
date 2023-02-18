@@ -25,6 +25,7 @@ const Header = ({ siteTitle }) => {
           <ol className="list-none uppercase text-[20px] text-right">
             <li><a onClick={() => scrollTo('#tickets')} className="no-underline font-bold text-text p-1 inline-block hover:opacity-25 transition-all cursor-pointer">Tickets</a></li>
             <li><a onClick={() => scrollTo('#penpals')} className="no-underline font-bold text-text p-1 inline-block hover:opacity-25 transition-all cursor-pointer">PenPals</a></li>
+            <li><a onClick={() => scrollTo('#art')} className="no-underline font-bold text-text p-1 inline-block hover:opacity-25 transition-all cursor-pointer">Art</a></li>
             <li><a onClick={() => scrollTo('#contact')} className="no-underline font-bold text-text p-1 inline-block hover:opacity-25 transition-all cursor-pointer">Contact</a></li>
           </ol>
         </nav>
