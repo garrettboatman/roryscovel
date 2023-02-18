@@ -193,14 +193,14 @@ const IndexPage = ({data}) => {
       <h2 className="font-bold text-3xl text-center uppercase ">Art</h2>
       <h3 className="text-md md:text-xl text-center">GALLERY OPENING SOON</h3>
       <div className="relative flex mt-6 md:mt-10">
-        <button className="z-10 relative left-[-12px]" onClick={slideToPrevItem}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-12 md:w-20 h-12 md:h-20 rounded-lg">
+        <button className="z-10 relative left-[-15px]" onClick={slideToPrevItem}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-10 md:w-20 h-10 md:h-20 rounded-lg">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
         </button>
         {carouselFragment}
-        <button className="z-10 relative right-[-12px]" onClick={slideToNextItem}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-12 md:w-20 h-12 md:h-20 rounded-lg">
+        <button className="z-10 relative right-[-15px]" onClick={slideToNextItem}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="bg-[#FFF6E5] p-2 w-10 md:w-20 h-10 md:h-20 rounded-lg">
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
         </button>
