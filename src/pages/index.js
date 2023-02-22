@@ -13,7 +13,8 @@ const Show = ({ data, setTicketHover }) => {
 
   const dateArray = data.date.split("|");
   const date = dateArray[0];
-  const time = dateArray[1];
+  let time = dateArray[1];
+  time = time.replace(":00", "");
 
   return (
     <div className="bg-[#F1E4CB] my-4 md:rounded-lg">
@@ -224,7 +225,7 @@ export const query = graphql`
     nodes {
       contentful_id
       city
-      date(formatString: "M.D.YY|hA")
+      date(formatString: "M.D.YY|h:mmA")
       venue
       ticketLink
     }
