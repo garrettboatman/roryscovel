@@ -228,7 +228,7 @@ pre tt:after {
 }
 
 .button.disabled {
-  opacity: .7;
+  opacity: .5;
   pointer-events: none;
 }
 
