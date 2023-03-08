@@ -226,6 +226,11 @@ pre tt:after {
   text-transform: uppercase;
 }
 
+.button.whatever {
+  background: #f96d03;
+  box-shadow: 2px 3px 0px 1px #df690f;
+}
+
 .use-spring-carousel-item {
   border-radius: 50px;
   overflow: hidden;
