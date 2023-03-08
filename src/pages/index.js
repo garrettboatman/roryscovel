@@ -11,6 +11,7 @@ import { useSpringCarousel } from 'react-spring-carousel'
 
 const Show = ({ data, setTicketHover }) => {
 
+  const isSoldOut = data.soldOut;
   const dateArray = data.date.split("|");
   const date = dateArray[0];
   let time = dateArray[1];
@@ -24,7 +25,7 @@ const Show = ({ data, setTicketHover }) => {
           <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">{data.venue}</div>
           <div className="uppercase font-bold">{data.city}</div>
         </div>
-        <div><a onFocus={() => setTicketHover(true)} onBlur={() => setTicketHover(false)} onMouseOver={() => setTicketHover(true)} onMouseOut={() => setTicketHover(false)} className="button text-md px-5 py-2 transition-all hover:scale-[1.2]" href={data.ticketLink}>Tickets</a></div>
+        <div><a onFocus={() => setTicketHover(true)} onBlur={() => setTicketHover(false)} onMouseOver={() => setTicketHover(true)} onMouseOut={() => setTicketHover(false)} className={`${isSoldOut && `disabled`} button text-md px-5 py-2 transition-all hover:scale-[1.2]`} href={data.ticketLink}>{isSoldOut ? 'Sold Out' : 'Tickets'}</a></div>
       </div>
     </div>
   )
@@ -259,6 +260,7 @@ export const query = graphql`
       date(formatString: "M.D.YY|h:mmA")
       venue
       ticketLink
+      soldOut
     }
   }
 }

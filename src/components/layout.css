@@ -224,6 +224,12 @@ pre tt:after {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button.disabled {
+  opacity: .7;
+  pointer-events: none;
 }
 
 .button.whatever {
