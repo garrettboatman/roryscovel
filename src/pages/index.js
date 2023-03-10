@@ -172,9 +172,8 @@ const IndexPage = ({data}) => {
               <div className="absolute w-full text-center top-[-13px]">
                 <span className="inline-block bold bg-[#ffe8d6] border border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">THE WHATEVER SHOW</span>
               </div>
-              <div className="flex py-4 px-5 items-center justify-between">
+              <div className="flex py-6 px-5 items-center justify-between">
                 <div className="text-lg leading-tight">
-                  <div className="text-xl tracking-tight mb-[3px]">3.13 · 3.20 · 3.27</div>
                   <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">The Elysian</div>
                   <div className="uppercase font-bold">Los Angeles, CA</div>
                 </div>
