@@ -177,7 +177,7 @@ const IndexPage = ({data}) => {
                   <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">The Elysian</div>
                   <div className="uppercase font-bold">Los Angeles, CA</div>
                 </div>
-                <div><a onFocus={() => setElysianTicketHover(true)} onBlur={() => setElysianTicketHover(false)} onMouseOver={() => setElysianTicketHover(true)} onMouseOut={() => setElysianTicketHover(false)} className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.elysiantheater.com/shows/roryscovel031323">Tickets</a></div>
+                <div><a onFocus={() => setElysianTicketHover(true)} onBlur={() => setElysianTicketHover(false)} onMouseOver={() => setElysianTicketHover(true)} onMouseOut={() => setElysianTicketHover(false)} className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.eventbrite.com/e/the-whatever-show-w-rory-scovel-tickets-492110364347">Tickets</a></div>
               </div>
             </div>
 
