@@ -5,7 +5,7 @@ const https = require('https');
 
 const LOCAL_BUILD_DIRECTORY = "public"
 const DEPLOY_DIRECTORY_NAME = "temp"
-const PRODUCTION_DIRECTORY_NAME = "master"
+const PRODUCTION_DIRECTORY_NAME = "public"
 const BROKEN_BUILD = "broken"
 const PRODUCTION_URL = "https://www.roryscovel.com/"
 
