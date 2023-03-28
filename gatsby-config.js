@@ -17,7 +17,7 @@ module.exports = {
     title: `Rory Scovel`,
     description: `“The Last Tour” 🎟️ TICKETS AVAILABLE NOW!`,
     author: `@roryscovel`,
-    siteUrl: `https://roryscovel.gatsbyjs.io`, //Todo: Change this
+    siteUrl: `https://roryscovel.com`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
