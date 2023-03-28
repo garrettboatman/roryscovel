@@ -8,14 +8,14 @@ jobs:
   build-deploy:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
+    executor:
+      name: node/default
+      tag: '19.0.1'
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - node/install:
-        node-version: '19.0.1'
+      - node/install-packages
       - run: npm run build
       - run:
           name: Deploy to BlueHost
