@@ -32,7 +32,6 @@ const Show = ({ data, setTicketHover }) => {
 };
 
 const IndexPage = ({data}) => {
-  console.log('data', data);
   
   const [ticketHover, setTicketHover] = React.useState(false);
   const [elysianTicketHover, setElysianTicketHover] = React.useState(false);
