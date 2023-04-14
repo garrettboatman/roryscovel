@@ -21,7 +21,7 @@ const Show = ({ data, setTicketHover }) => {
     <div className="bg-[#F1E4CB] my-4 md:rounded-lg">
       <div className="flex py-4 px-5 items-center justify-between">
         <div className="text-lg leading-tight">
-          <div className="text-xl tracking-tight mb-[3px]">{date} {time !== "12AM" && <span className="font-normal text-sm">({time})</span>}</div>
+          <div className="text-xl tracking-tight mb-[3px]">{date} {time !== "12AM" && time !== "11:59PM" && <span className="font-normal text-sm">({time})</span>}</div>
           <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">{data.venue}</div>
           <div className="uppercase font-bold">{data.city}</div>
         </div>
