@@ -34,7 +34,6 @@ const Show = ({ data, setTicketHover }) => {
 const IndexPage = ({data}) => {
   
   const [ticketHover, setTicketHover] = React.useState(false);
-  const [elysianTicketHover, setElysianTicketHover] = React.useState(false);
 
   const { carouselFragment, slideToPrevItem, slideToNextItem } = useSpringCarousel({
     itemsPerSlide: 1,
@@ -136,7 +135,7 @@ const IndexPage = ({data}) => {
         <div className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]">
           <StaticImage
             src="../images/Rory_Scovel_TheLastTour_1.jpg"
-            className={`mx-2 h-[100%] ${ticketHover || elysianTicketHover ? `!hidden` : ``}`}
+            className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
             loading="eager"
             objectFit="contain"
             placeholder="none"
@@ -152,15 +151,6 @@ const IndexPage = ({data}) => {
             formats={["auto", "webp", "avif"]}
             alt=""
           />
-          <StaticImage
-            src="../images/whatever_show.jpg"
-            className={`mx-2 overflow-hidden h-[100%] ${!elysianTicketHover ? `!hidden` : ``}`}
-            loading="eager"
-            objectFit="contain"
-            placeholder="none"
-            formats={["auto", "webp", "avif"]}
-            alt=""
-          />
         </div>
       </div>
       <div id="tickets" className="w-full flex justify-start">
@@ -169,14 +159,14 @@ const IndexPage = ({data}) => {
 
             <div className="bg-[#F1E4CB] my-4 md:rounded-lg relative">
               <div className="absolute w-full text-center top-[-13px]">
-                <span className="inline-block bold bg-[#ffe8d6] border border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">THE WHATEVER SHOW</span>
+                <span className="inline-block bold bg-[#ffe8d6] border border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">@ THE ELYSIAN</span>
               </div>
               <div className="flex py-6 px-5 items-center justify-between">
                 <div className="text-lg leading-tight">
-                  <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">The Elysian</div>
+                  <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">The Elysian Theater</div>
                   <div className="uppercase font-bold">Los Angeles, CA</div>
                 </div>
-                <div><a onFocus={() => setElysianTicketHover(true)} onBlur={() => setElysianTicketHover(false)} onMouseOver={() => setElysianTicketHover(true)} onMouseOut={() => setElysianTicketHover(false)} className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.eventbrite.com/e/the-whatever-show-w-rory-scovel-tickets-492110364347">Tickets</a></div>
+                <div><a className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.eventbrite.com/e/the-whatever-show-w-rory-scovel-tickets-492110364347">Tickets</a></div>
               </div>
             </div>
 
