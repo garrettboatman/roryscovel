@@ -1,10 +1,10 @@
 :root {
   --border-radius: 4px;
-  --color-text: #2C0606;
-  --color-primary: #01A8E5;
-  --color-bg: #FFF6E5;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --color-text: #2c0606;
+  --color-primary: #01a8e5;
+  --color-bg: #fff6e5;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --font-lg: 18px;
@@ -64,7 +64,11 @@ strong {
 dfn {
   font-style: italic;
 }
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-sans);
 }
 h1 {
@@ -217,10 +221,10 @@ pre tt:after {
 
 .button {
   display: inline-block;
-  background: #01A8E6;
-  box-shadow: 2px 3px 0px 1px #0087B8;
+  background: #01a8e6;
+  box-shadow: 2px 3px 0px 1px #0087b8;
   border-radius: 10px;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -228,13 +232,18 @@ pre tt:after {
 }
 
 .button.disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 
 .button.whatever {
   background: #f96d03;
   box-shadow: 2px 3px 0px 1px #df690f;
+}
+
+.button.penpals {
+  background: #257090;
+  box-shadow: 2px 3px 0px 1px #184f67;
 }
 
 .use-spring-carousel-item {
