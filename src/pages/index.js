@@ -211,34 +211,7 @@ const IndexPage = ({ data }) => {
                   </div>
                 </div>
               </div>
-              {/* */}
-              <div className="bg-[#F1E4CB] my-4 mt-8 md:rounded-lg relative">
-                <div className="absolute w-full text-center top-[-13px]">
-                  <span className="inline-block bold bg-[#ebebeb] border border-[#257090] text-[#257090] px-[18px] py-[3px] rounded-[100px] text-sm font-bold">
-                    PEN PALS
-                  </span>
-                </div>
-                <div className="flex py-6 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      7.6.23
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Pen Pals Podcast
-                    </div>
-                    <div className="uppercase font-bold">Live Recording</div>
-                  </div>
-                  <div>
-                    <a
-                      className="button penpals text-md px-5 py-2 transition-all hover:scale-[1.2]"
-                      href="https://www.eventbrite.com/e/the-pen-pals-podcast-live-recording-tickets-653725148517"
-                    >
-                      Tickets
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* */}
+              
               <div className="relative">
                 <div className="w-full text-center">
                   <span className="w-[196px] inline-block bold bg-[#03a8e6] border border-[#0087B8] text-[#FFF] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
