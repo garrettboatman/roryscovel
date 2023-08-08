@@ -204,7 +204,7 @@ const IndexPage = ({ data }) => {
                   <div>
                     <a
                       className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]"
-                      href="https://www.eventbrite.com/e/an-hour-w-rory-scovel-tickets-492110364347"
+                      href="https://www.elysiantheater.com/shows/roryscovel"
                     >
                       Tickets
                     </a>
