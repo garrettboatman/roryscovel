@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => {
         <div id="tickets" className="w-full flex justify-start">
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
-              <div className="bg-[#F1E4CB] my-4 md:rounded-lg relative">
+              {/* <div className="bg-[#F1E4CB] my-4 md:rounded-lg relative">
                 <div className="absolute w-full text-center top-[-13px]">
                   <span className="inline-block bold bg-[#ffe8d6] border border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     @ THE ELYSIAN
@@ -210,7 +210,7 @@ const IndexPage = ({ data }) => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="relative">
                 <div className="w-full text-center">
