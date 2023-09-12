@@ -238,9 +238,9 @@ const IndexPage = ({ data }) => {
         <h3 className="text-md md:text-xl text-center">
           <a
             className="text-[#000] no-underline uppercase transition-all hover:opacity-40"
-            href="https://penpalspod.com"
+            href="https://thepenpalspod.com"
           >
-            PenPalsPod.com
+            ThePenPalsPod.com
           </a>
         </h3>
         <div className="flex max-w-xl mx-auto mt-6 md:mt-10">
