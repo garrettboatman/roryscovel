@@ -166,7 +166,7 @@ const IndexPage = ({ data }) => {
         <div className="">
           <div className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]">
             <StaticImage
-              src="../images/Rory_Scovel_Special.jpg"
+              src="../images/Rory_Scovel_TheLastTour_1.jpg"
               className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
               loading="eager"
               objectFit="contain"
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => {
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
               
-              <div className="relative mb-[-30px]">
+              {/* <div className="relative mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="w-[220px] inline-block bold bg-[#c0ebdf] border-2 border-[#3a7f6d] text-[#3a7f6d] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     SPECIAL TAPING EVENT
@@ -208,7 +208,7 @@ const IndexPage = ({ data }) => {
                     />
                   );
                 }
-              })}
+              })} */}
 
               <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
