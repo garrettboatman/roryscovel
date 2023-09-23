@@ -38,7 +38,7 @@ const Show = ({ data, setTicketHover }) => {
             onMouseOut={() => setTicketHover(false)}
             className={`${
               isSoldOut && `disabled`
-            } button text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+            } button ${data.showType} text-md px-5 py-2 transition-all hover:scale-[1.2]`}
             href={data.ticketLink}
           >
             {isSoldOut ? "Sold Out" : "Tickets"}
@@ -166,7 +166,7 @@ const IndexPage = ({ data }) => {
         <div className="">
           <div className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]">
             <StaticImage
-              src="../images/Rory_Scovel_TheLastTour_1.jpg"
+              src="../images/Rory_Scovel_Special.jpg"
               className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
               loading="eager"
               objectFit="contain"
@@ -188,44 +188,68 @@ const IndexPage = ({ data }) => {
         <div id="tickets" className="w-full flex justify-start">
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
-              {/* <div className="bg-[#F1E4CB] my-4 md:rounded-lg relative">
-                <div className="absolute w-full text-center top-[-13px]">
-                  <span className="inline-block bold bg-[#ffe8d6] border border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
-                    @ THE ELYSIAN
+              
+              <div className="relative mb-[-30px]">
+                <div className="w-full text-center">
+                  <span className="w-[220px] inline-block bold bg-[#c0ebdf] border-2 border-[#3a7f6d] text-[#3a7f6d] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+                    SPECIAL TAPING EVENT
                   </span>
                 </div>
-                <div className="flex py-6 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      The Elysian Theater
-                    </div>
-                    <div className="uppercase font-bold">Los Angeles, CA</div>
-                  </div>
-                  <div>
-                    <a
-                      className="button whatever text-md px-5 py-2 transition-all hover:scale-[1.2]"
-                      href="https://www.elysiantheater.com/shows/roryscovel082123"
-                    >
-                      Tickets
-                    </a>
-                  </div>
-                </div>
-              </div> */}
+              </div>
 
-              <div className="relative">
+              {data.allContentfulShow.nodes.map(data => {
+                if (data.showType === "special") {
+                  return (
+                    <Show
+                      setTicketHover={() => false}
+                      key={data.contentful_id}
+                      data={data}
+                      showType={data.showType}
+                    />
+                  );
+                }
+              })}
+
+              <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
-                  <span className="w-[196px] inline-block bold bg-[#03a8e6] border border-[#0087B8] text-[#FFF] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+                  <span className="inline-block bold bg-[#ffe8d6] border-2 border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+                    THE WHATEVER SHOW
+                  </span>
+                </div>
+              </div>
+
+              {data.allContentfulShow.nodes.map(data => {
+                if (data.showType === "whatever") {
+                  return (
+                    <Show
+                      setTicketHover={() => false}
+                      key={data.contentful_id}
+                      data={data}
+                      showType={data.showType || ""}
+                    />
+                  );
+                }
+              })}
+              <div className="relative mt-10 mb-[-30px]">
+                <div className="w-full text-center">
+                  <span className="w-[196px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     THE LAST TOUR
                   </span>
                 </div>
               </div>
-              {data.allContentfulShow.nodes.map(data => (
-                <Show
-                  setTicketHover={setTicketHover}
-                  key={data.contentful_id}
-                  data={data}
-                />
-              ))}
+              {data.allContentfulShow.nodes.map(data => {
+                if (!data.showType) {
+                  return (
+                    <Show
+                      setTicketHover={setTicketHover}
+                      key={data.contentful_id}
+                      data={data}
+                      showType={data.showType || ""}
+                    />
+                  );
+                } 
+              })}
+
             </div>
           </div>
         </div>
@@ -357,6 +381,7 @@ export const query = graphql`
         venue
         ticketLink
         soldOut
+        showType
       }
     }
   }

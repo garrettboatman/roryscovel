@@ -241,6 +241,11 @@ pre tt:after {
   box-shadow: 2px 3px 0px 1px #df690f;
 }
 
+.button.special {
+  background: #3a7f6d;
+  box-shadow: 2px 3px 0px 1px #16473a;
+}
+
 .button.penpals {
   background: #257090;
   box-shadow: 2px 3px 0px 1px #184f67;
