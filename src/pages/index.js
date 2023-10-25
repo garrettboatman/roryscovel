@@ -210,13 +210,13 @@ const IndexPage = ({ data }) => {
                 }
               })}
 
-              <div className="relative mt-10 mb-[-30px]">
+              {/* <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="inline-block bold bg-[#ffe8d6] border-2 border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     THE WHATEVER SHOW
                   </span>
                 </div>
-              </div>
+              </div> */}
 
               {data.allContentfulShow.nodes.map(data => {
                 if (data.showType === "whatever") {
