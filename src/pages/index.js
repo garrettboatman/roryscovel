@@ -210,7 +210,7 @@ const IndexPage = ({ data }) => {
                 }
               })} */}
 
-              <div className="relative mt-10 mb-[-30px]">
+              {/* <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="inline-block bold bg-[#ffe8d6] border-2 border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     THE WHATEVER SHOW
@@ -229,7 +229,8 @@ const IndexPage = ({ data }) => {
                     />
                   );
                 }
-              })}
+              })} */}
+              
               <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="w-[196px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
