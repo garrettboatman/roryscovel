@@ -236,7 +236,7 @@ pre tt:after {
   pointer-events: none;
 }
 
-.button.whatever {
+.button.whatever, .button.standard {
   background: #f96d03;
   box-shadow: 2px 3px 0px 1px #df690f;
 }
