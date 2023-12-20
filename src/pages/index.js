@@ -13,7 +13,11 @@ const Show = ({ data, setTicketHover }) => {
   const dateArray = data.date.split("|")
   const date = dateArray[0]
   let time = dateArray[1]
-  time = time.replace(":00", "")
+  time = time.replace(":00", "");
+  let standard = false;
+  let penpals = false;
+  let special = false;
+  let tour = false;
 
   return (
     <div className="bg-[#F1E4CB] my-4 md:rounded-lg">
@@ -230,10 +234,31 @@ const IndexPage = ({ data }) => {
                   );
                 }
               })} */}
+
+              <div className="relative mt-10 mb-[-30px]">
+                <div className="w-full text-center">
+                  <span className="inline-block bold bg-[#257090] border-2 border-[#16473a] text-[#fff] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+                    PEN PALS
+                  </span>
+                </div>
+              </div>
+
+              {data.allContentfulShow.nodes.map(data => {
+                if (data.showType === "penpals") {
+                  return (
+                    <Show
+                      setTicketHover={() => false}
+                      key={data.contentful_id}
+                      data={data}
+                      showType={data.showType || ""}
+                    />
+                  );
+                }
+              })}
               
               <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
-                  <span className="w-[196px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+                  <span className="w-[146px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     THE LAST TOUR
                   </span>
                 </div>
