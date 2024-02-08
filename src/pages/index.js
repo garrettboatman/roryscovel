@@ -487,7 +487,7 @@ export const query = graphql`
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
 export const Head = () => (
-  <Seo title="Rory Scovel | RELIGION, SEX, AND A FEW THINGS IN BETWEEN | FEB 22 on MAX" />
+  <Seo title="RELIGION, SEX, AND A FEW THINGS IN BETWEEN | FEB 22 on MAX" />
 )
 
 export default IndexPage
