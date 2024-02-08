@@ -15,7 +15,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Rory Scovel`,
-    description: `“The Last Tour” 🎟️ TICKETS AVAILABLE NOW!`,
+    description: `“RELIGION, SEX, AND A FEW THINGS IN BETWEEN | FEB 22 on MAX`,
     author: `@roryscovel`,
     siteUrl: `https://roryscovel.com`,
   },

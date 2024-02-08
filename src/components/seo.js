@@ -21,7 +21,7 @@ function Seo({ description, title, children }) {
           }
         }
         featuredImage: file(
-          absolutePath: { glob: "**/src/images/Rory_Scovel_TheLastTour.png" }
+          absolutePath: { glob: "**/src/images/Rory_Scovel_Special.png" }
         ) {
           childImageSharp {
             gatsbyImageData(layout: FIXED, width: 1080)
