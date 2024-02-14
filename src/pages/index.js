@@ -20,7 +20,7 @@ const Show = ({ data, setTicketHover }) => {
   let tour = false;
 
   return (
-    <div className="bg-[#F1E4CB] my-4 md:rounded-lg">
+    <div className="bg-[#F1E4CB] my-4 md:rounded-xl">
       <div className="flex py-4 px-5 items-center justify-between">
         <div className="text-lg leading-tight">
           <div className="text-xl tracking-tight mb-[3px]">
@@ -195,7 +195,7 @@ const IndexPage = ({ data }) => {
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
             
-              <div className="relative mx-4 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 20, overflow: 'hidden'}}>
+              <div className="relative mx-4 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 15, overflow: 'hidden'}}>
                 <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               </div>
               {/* <br /> */}
@@ -207,7 +207,7 @@ const IndexPage = ({ data }) => {
                 </div>
               </div> */}
 
-              <div className="bg-[#F1E4CB] my-4 py-4 md:rounded-lg">
+              <div className="bg-[#F1E4CB] my-4 py-4 md:rounded-xl">
                 <div className="flex py-1 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     {/* <div className="text-xl tracking-tight mb-[3px] font-bold">
