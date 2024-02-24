@@ -191,11 +191,12 @@ const IndexPage = ({ data }) => {
             />
           </div>
         </div>
+
+
         <div id="tickets" className="w-full flex justify-start">
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
-            
-             
+  
               {/* <br /> */}
               {/* <div className="relative mb-[-30px]">
                 <div className="w-full text-center">
@@ -204,6 +205,10 @@ const IndexPage = ({ data }) => {
                   </span>
                 </div>
               </div> */}
+
+              <div className="relative mb-4 mx-6 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 15, overflow: 'hidden'}}>
+                <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+              </div>
 
               <div className="bg-[#F1E4CB] mb-4 py-4 md:rounded-xl">
                 <div className="flex py-1 px-5 items-center justify-between">
@@ -214,7 +219,7 @@ const IndexPage = ({ data }) => {
                     <div className="text-[18px] font-semibold text-black max-w-[300px] bold my-3 pr-1 uppercase">
                     
                     </div>
-                    <div className="uppercase font-bold text-[16px] mb-3 text-[#766363]">Now Streaming on <span style={{opacity: 0}}>MAX</span>
+                    <div className="uppercase font-bold text-[16px] mb-3 text-[#766363]"><span  style={{display: 'block', width: 1, height: 1, opacity: 0, overflow: 'hidden'}}>Religion, Sex, and a Few Things In Between - </span>Now Streaming on <span style={{display: 'block', width: 1, height: 1, opacity: 0, overflow: 'hidden'}}>MAX</span>
                       <span className="inline-block relative" style={{width: '100%'}}>
                         <svg role="img" aria-label="Max" viewBox="0 0 1000 274" style={{width: 80}} fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_128_9)">
@@ -238,14 +243,12 @@ const IndexPage = ({ data }) => {
                       className={`button special text-md px-5 py-2 transition-all hover:scale-[1.2]`}
                       href="https://www.max.com/movies/rory-scovel-religion-sex-and-a-few-things-in-between/f897aaef-6232-4ffb-8cde-d0b7736a15aa"
                     >
-                      WATCH ON MAX
+                      WATCH&nbsp; IT
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="relative mx-4 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 15, overflow: 'hidden'}}>
-                <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-              </div>
+          
 
               {/*
               {data.allContentfulShow.nodes.map(data => {
