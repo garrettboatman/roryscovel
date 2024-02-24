@@ -195,9 +195,7 @@ const IndexPage = ({ data }) => {
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-2">
             
-              <div className="relative mx-4 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 15, overflow: 'hidden'}}>
-                <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-              </div>
+             
               {/* <br /> */}
               {/* <div className="relative mb-[-30px]">
                 <div className="w-full text-center">
@@ -207,18 +205,18 @@ const IndexPage = ({ data }) => {
                 </div>
               </div> */}
 
-              <div className="bg-[#F1E4CB] my-4 py-4 md:rounded-xl">
+              <div className="bg-[#F1E4CB] mb-4 py-4 md:rounded-xl">
                 <div className="flex py-1 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     {/* <div className="text-xl tracking-tight mb-[3px] font-bold">
                       2.22.24
                     </div> */}
                     <div className="text-[18px] font-semibold text-black max-w-[300px] bold my-3 pr-1 uppercase">
-                    Religion, Sex, and a Few Things In Between
+                    
                     </div>
-                    <div className="uppercase font-bold text-[16px] mt-6 text-[#766363]">Streaming Feb 22 on
+                    <div className="uppercase font-bold text-[16px] mb-3 text-[#766363]">Now Streaming on <span style={{opacity: 0}}>MAX</span>
                       <span className="inline-block relative" style={{width: '100%'}}>
-                        <svg viewBox="0 0 1000 274" style={{width: 80}} fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg role="img" aria-label="Max" viewBox="0 0 1000 274" style={{width: 80}} fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_128_9)">
                           <path d="M157.65 0C130.367 0 102.651 12.1327 67.1348 39.416V6.93359H0V266.768H71.4668V105.234C102.65 80.5511 116.933 72.75 128.633 72.75C142.483 72.75 151.584 81.4164 151.584 103.066V266.768H223.033V104.801C254.217 80.5508 268.085 72.75 280.201 72.75C294.068 72.75 303.15 81.4164 303.15 103.066V266.768H374.602V77.9512C374.602 19.4845 341.251 0 309.201 0C281.918 0 254.2 11.2658 217.816 38.9824C206.15 9.9491 180.6 0 157.65 0ZM519.703 0C448.687 0 389.785 61.0664 389.785 136.85C389.785 212.633 448.687 273.701 519.703 273.701C554.786 273.701 585.104 260.719 608.504 232.553V266.768H676.502V6.93359H608.504V41.1484C585.104 12.9818 554.786 0 519.703 0ZM689.053 6.93359C718.501 52.8305 751.849 93.9777 790.83 135.125C751.849 177.989 718.501 222.604 689.053 266.768H775.23C795.579 233.853 818.529 203.97 844.961 175.822C870.943 203.97 892.59 233.853 912.955 266.768H1000C970.119 221.304 937.637 177.989 898.656 135.125C937.204 93.9777 970.119 51.5473 1000 6.93359H914.689C893.474 39.8481 870.526 67.5622 844.961 94.8438C818.979 67.5622 796.029 39.8481 775.23 6.93359H689.053ZM530.52 60.2012C572.953 60.2012 607.17 94.4164 607.17 136.85C607.17 179.283 572.953 213.5 530.52 213.5C488.086 213.5 453.869 179.3 453.869 136.85C453.869 94.3997 488.086 60.2012 530.52 60.2012ZM530.52 77.5176C498.036 77.5176 471.619 103.933 471.619 136.85C471.619 169.766 498.036 196.184 530.52 196.184C563.003 196.184 589.418 169.766 589.418 136.85C589.418 103.933 563.003 77.5176 530.52 77.5176Z" fill="#002BE7"/>
                         </g>
@@ -233,17 +231,20 @@ const IndexPage = ({ data }) => {
                   </div>
                   <div className="mt-3 mb-auto">
                     <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      onMouseOut={() => setTicketHover(false)}
+                      // onFocus={() => setTicketHover(true)}
+                      // onBlur={() => setTicketHover(false)}
+                      // onMouseOver={() => setTicketHover(true)}
+                      // onMouseOut={() => setTicketHover(false)}
                       className={`button special text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                      href="https://www.youtube.com/watch?v=39H40-sJGW4"
+                      href="https://www.max.com/movies/rory-scovel-religion-sex-and-a-few-things-in-between/f897aaef-6232-4ffb-8cde-d0b7736a15aa"
                     >
-                      Trailer
+                      WATCH ON MAX
                     </a>
                   </div>
                 </div>
+              </div>
+              <div className="relative mx-4 md:mx-0" style={{paddingTop: '56.25%', borderRadius: 15, overflow: 'hidden'}}>
+                <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               </div>
 
               {/*
@@ -353,7 +354,7 @@ const IndexPage = ({ data }) => {
         id="art"
         className="overflow-hidden my-20 md:my-[200px] content-container max-w-[1200px] mx-auto"
       >
-        <h2 className="mt-5 font-bold text-3xl text-center uppercase ">Art</h2>
+        <h2 className="mt-5 font-bold text-3xl text-center uppercase ">Paintings</h2>
         <div className="text-md md:text-xl mt-2 text-center"><a className="text-[#000]" href="https://shop.roryscovel.com">Shop the Collection</a></div>
         <div className="relative flex mt-6 md:mt-10">
           <button
