@@ -239,6 +239,13 @@ pre tt:after {
 .button.whatever, .button.standard {
   background: #f96d03;
   box-shadow: 2px 3px 0px 1px #df690f;
+  
+}
+
+.button.white {
+  background: #ffffff;
+  box-shadow: 2px 3px 0px 1px #dddddd;
+  color: #000;
 }
 
 .button.special {

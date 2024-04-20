@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 import Apple from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Apple.svg"
 import Youtube from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Youtube.svg"
 import Patreon from "-!svg-react-loader?props[]=className:w-4 h-4!../images/Patreon.svg"
-import { useSpringCarousel } from "react-spring-carousel"
+// import { useSpringCarousel } from "react-spring-carousel"
 
 const Show = ({ data, setTicketHover }) => {
   const isSoldOut = data.soldOut
@@ -56,121 +56,124 @@ const Show = ({ data, setTicketHover }) => {
 const IndexPage = ({ data }) => {
   const [ticketHover, setTicketHover] = React.useState(false)
 
-  const { carouselFragment, slideToPrevItem, slideToNextItem } =
-    useSpringCarousel({
-      itemsPerSlide: 1,
-      withLoop: true,
-      items: [
-        {
-          id: 1,
-          renderItem: (
-            <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/the-upside-is'}}>
-              <div>
-                <StaticImage
-                  src="../images/art_1.jpg"
+  // const { carouselFragment, slideToPrevItem, slideToNextItem } =
+  //   useSpringCarousel({
+  //     itemsPerSlide: 1,
+  //     withLoop: true,
+  //     items: [
+  //       {
+  //         id: 1,
+  //         renderItem: (
+  //           <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/the-upside-is'}}>
+  //             <div>
+  //               <StaticImage
+  //                 src="../images/art_1.jpg"
                   
-                  className="max-w-[400px] md:max-w-[500px]"
-                  loading="eager"
-                  objectFit="contain"
-                  imgStyle={{ borderRadius: "15px" }}
-                  quality={95}
-                  placeholder="none"
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ),
-        },
-        {
-          id: 5,
-          renderItem: (
-            <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/alice'}}>
-              <div>
-                <StaticImage
-                  src="../images/art_5.jpg"
-                  className="max-w-[400px] md:max-w-[500px] "
-                  loading="eager"
-                  objectFit="contain"
-                  imgStyle={{ borderRadius: "15px" }}
-                  quality={95}
-                  placeholder="none"
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ),
-        },
-        {
-          id: 2,
-          renderItem: (
-            <div className="flex justify-center w-full px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/11-mountain-lake-v-ol-2'}}>
-              <div>
-                <StaticImage
-                  src="../images/art_2.jpg"
+  //                 className="max-w-[400px] md:max-w-[500px]"
+  //                 loading="eager"
+  //                 objectFit="contain"
+  //                 imgStyle={{ borderRadius: "15px" }}
+  //                 quality={95}
+  //                 placeholder="none"
+  //                 formats={["auto", "webp", "avif"]}
+  //                 alt=""
+  //               />
+  //             </div>
+  //           </div>
+  //         ),
+  //       },
+  //       {
+  //         id: 5,
+  //         renderItem: (
+  //           <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/alice'}}>
+  //             <div>
+  //               <StaticImage
+  //                 src="../images/art_5.jpg"
+  //                 className="max-w-[400px] md:max-w-[500px] "
+  //                 loading="eager"
+  //                 objectFit="contain"
+  //                 imgStyle={{ borderRadius: "15px" }}
+  //                 quality={95}
+  //                 placeholder="none"
+  //                 formats={["auto", "webp", "avif"]}
+  //                 alt=""
+  //               />
+  //             </div>
+  //           </div>
+  //         ),
+  //       },
+  //       {
+  //         id: 2,
+  //         renderItem: (
+  //           <div className="flex justify-center w-full px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/11-mountain-lake-v-ol-2'}}>
+  //             <div>
+  //               <StaticImage
+  //                 src="../images/art_2.jpg"
                   
-                  className="max-w-[400px] md:max-w-[500px]"
-                  loading="eager"
-                  objectFit="contain"
-                  imgStyle={{ borderRadius: "15px" }}
-                  quality={95}
-                  placeholder="none"
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ),
-        },
-        {
-          id: 3,
-          renderItem: (
-            <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/14-mountain-lake-vol-1'}}>
-              <div>
-                <StaticImage
-                  src="../images/art_3.jpg"
-                  className="max-w-[400px] md:max-w-[500px]"
-                  loading="eager"
-                  objectFit="contain"
-                  imgStyle={{ borderRadius: "15px" }}
-                  quality={95}
-                  placeholder="none"
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ),
-        },
-        {
-          id: 4,
-          renderItem: (
-            <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/19-there-is-no-time'}}>
-              <div>
-                <StaticImage
-                  src="../images/art_4.jpg"
-                  className="max-w-[400px] md:max-w-[500px] "
-                  loading="eager"
-                  objectFit="contain"
-                  imgStyle={{ borderRadius: "15px" }}
-                  quality={95}
-                  placeholder="none"
-                  formats={["auto", "webp", "avif"]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ),
-        },
-      ],
-    })
+  //                 className="max-w-[400px] md:max-w-[500px]"
+  //                 loading="eager"
+  //                 objectFit="contain"
+  //                 imgStyle={{ borderRadius: "15px" }}
+  //                 quality={95}
+  //                 placeholder="none"
+  //                 formats={["auto", "webp", "avif"]}
+  //                 alt=""
+  //               />
+  //             </div>
+  //           </div>
+  //         ),
+  //       },
+  //       {
+  //         id: 3,
+  //         renderItem: (
+  //           <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/14-mountain-lake-vol-1'}}>
+  //             <div>
+  //               <StaticImage
+  //                 src="../images/art_3.jpg"
+  //                 className="max-w-[400px] md:max-w-[500px]"
+  //                 loading="eager"
+  //                 objectFit="contain"
+  //                 imgStyle={{ borderRadius: "15px" }}
+  //                 quality={95}
+  //                 placeholder="none"
+  //                 formats={["auto", "webp", "avif"]}
+  //                 alt=""
+  //               />
+  //             </div>
+  //           </div>
+  //         ),
+  //       },
+  //       {
+  //         id: 4,
+  //         renderItem: (
+  //           <div className="flex justify-center w-full cursor-pointer px-[8px]" onClick={() => {window.location.href = 'https://shop.roryscovel.com/products/19-there-is-no-time'}}>
+  //             <div>
+  //               <StaticImage
+  //                 src="../images/art_4.jpg"
+  //                 className="max-w-[400px] md:max-w-[500px] "
+  //                 loading="eager"
+  //                 objectFit="contain"
+  //                 imgStyle={{ borderRadius: "15px" }}
+  //                 quality={95}
+  //                 placeholder="none"
+  //                 formats={["auto", "webp", "avif"]}
+  //                 alt=""
+  //               />
+  //             </div>
+  //           </div>
+  //         ),
+  //       },
+  //     ],
+  //   })
 
   return (
     <Layout>
       <div className="flex max-w-[1200px] align-top mx-auto justify-center flex-col md:flex-row">
         <div className="">
-          <div className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]">
+          <div
+            className="md:sticky md:top-[20px]"
+            // className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]"
+            >
             <StaticImage
               src="../images/Rory_Scovel_Special_1.jpg"
               className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
@@ -195,7 +198,7 @@ const IndexPage = ({ data }) => {
 
         <div id="tickets" className="w-full flex justify-start">
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
-            <div className="my-8 md:my-2">
+            <div className="my-8 md:my-0">
   
               {/* <br /> */}
               {/* <div className="relative mb-[-30px]">
@@ -355,11 +358,27 @@ const IndexPage = ({ data }) => {
       </div>
       <div
         id="art"
-        className="overflow-hidden my-20 md:my-[200px] content-container max-w-[1200px] mx-auto"
+        className="overflow-hidden my-20 md:my-[200px] max-w-[1200px] mx-auto"
       >
-        <h2 className="mt-5 font-bold text-3xl text-center uppercase ">Paintings</h2>
-        <div className="text-md md:text-xl mt-2 text-center"><a className="text-[#000]" href="https://shop.roryscovel.com">Shop the Collection</a></div>
-        <div className="relative flex mt-6 md:mt-10">
+        <h2 className="mt-5 font-bold text-3xl text-center uppercase left-[-150px]">Paintings</h2>
+        <br /> <br />
+        <div className="relative pb-[250px] md:pb-[39.37%]">
+          <div className="absolute flex items-center justify-center z-10 h-[100%] w-[100%]">
+            <a className="button white text-md px-5 py-2 transition-all scale-[1.4] md:scale-[1.5] hover:scale-[1.6]" href="https://shop.roryscovel.com">Shop New Collection</a>
+          </div>
+          <StaticImage
+            src="../images/paintings_bg.jpg"
+            className="overflow-hidden md:rounded-2xl absolute inset-0 object-cover min-w-[600px]"
+            quality={95}
+            placeholder="none"
+            formats={["auto", "webp", "avif"]}
+            alt=""
+          />
+        </div>
+        
+
+        
+        {/* <div className="relative flex mt-6 md:mt-10">
           <button
             className="z-10 relative left-[-15px] lg:left-[10%]"
             onClick={slideToPrevItem}
@@ -399,7 +418,7 @@ const IndexPage = ({ data }) => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
       
       <div
