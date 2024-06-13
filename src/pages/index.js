@@ -294,7 +294,7 @@ const IndexPage = ({ data }) => {
                     PEN PALS
                   </span>
                 </div>
-              </div> */}
+              </div>
 
               {data.allContentfulShow.nodes.map(data => {
                 if (data.showType === "penpals") {
@@ -307,12 +307,12 @@ const IndexPage = ({ data }) => {
                     />
                   );
                 }
-              })}
+              })} */}
               
-              {/* <div className="relative mt-10 mb-[-30px]">
+              <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="w-[146px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
-                    TOUR DATES
+                    LIVE SHOWS
                   </span>
                 </div>
               </div>
@@ -327,11 +327,11 @@ const IndexPage = ({ data }) => {
                     />
                   );
                 } 
-              })} */}
+              })}
 
             </div>
 
-              <div className="relative mt-10 mb-[-30px]">
+              {/* <div className="relative mt-10 mb-[-30px]">
                 <div className="w-full text-center">
                   <span className="inline-block bold bg-[#ffe8d6] border-2 border-[#f96d03] text-[#f96d03] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
                     @ THE ELYSIAN
@@ -350,7 +350,7 @@ const IndexPage = ({ data }) => {
                     />
                   );
                 }
-              })}
+              })} */}
 
              
           </div>
