@@ -364,7 +364,7 @@ const IndexPage = ({ data }) => {
         <br /> <br />
         <div className="relative">
           <div className="absolute flex items-center justify-center z-10 h-[100%] w-[100%]">
-            <a className="button white text-md px-5 py-2 transition-all scale-[1.4] md:scale-[1.5] hover:scale-[1.6]" href="https://shop.roryscovel.com">Shop New Collection</a>
+            <a className="button white text-md px-5 py-2 transition-all scale-[1.4] md:scale-[1.5] hover:scale-[1.6]" href="https://shop.roryscovel.com/discount/GOODBYE-LA">Shop New Collection</a>
           </div>
           <StaticImage
             src="../images/paintings_bg.jpg"
