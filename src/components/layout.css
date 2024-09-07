@@ -253,6 +253,16 @@ pre tt:after {
   box-shadow: 2px 3px 0px 1px #0021b4;
 }
 
+.button.spotify {
+  background: #1ED760;
+  box-shadow: 2px 3px 0px 1px #19b450;
+}
+
+.button.appleMusic {
+  background: #f94c57;
+  box-shadow: 2px 3px 0px 1px #e94752;
+}
+
 .button.penpals {
   background: #257090;
   box-shadow: 2px 3px 0px 1px #184f67;
