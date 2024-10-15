@@ -367,7 +367,18 @@ const IndexPage = ({ data }) => {
                   );
                 } 
               })}
-
+              <div class="bg-[#F1E4CB] my-4 md:rounded-xl">
+                <div class="flex py-4 px-5 items-center justify-between">
+                    <div class="text-lg leading-tight">
+                      <div class="text-xl tracking-tight mb-[3px]">
+                          1.8.25 - 1.18.25
+                      </div>
+                      <div class="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">Union Hall</div>
+                      <div class="uppercase font-bold">Brooklyn, NY</div>
+                    </div>
+                    <div><a class="false button null text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.eventbrite.com/cc/600-minutes-with-rory-scovel-3750219">Tickets</a></div>
+                </div>
+              </div>
             </div>
 
               {/* <div className="relative mt-10 mb-[-30px]">
