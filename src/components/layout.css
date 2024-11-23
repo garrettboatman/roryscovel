@@ -303,6 +303,9 @@ pre tt:after {
 }
 
 @media (min-width: 940px) {
+  #tickets {
+    margin-top: 100px;
+  }
   .sixhundred-bg-image {
     min-width: 800px;
   }
@@ -317,6 +320,10 @@ pre tt:after {
 }
 
 @media (min-width: 1170px) {
+  #tickets {
+    margin-top: 350px;
+  }
+
   .sixhundred-bg-image {
     min-width: 800px;
   }
@@ -331,6 +338,9 @@ pre tt:after {
 }
 
 @media (min-width: 1450px) {
+  #tickets {
+    margin-top: 500px;
+  }
   .sixhundred-bg-image {
     min-width: 800px;
   }
@@ -345,6 +355,26 @@ pre tt:after {
 }
 
 @media (min-width: 1710px) {
+  #tickets {
+    margin-top: 700px;
+  }
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 950px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 950px;
+  }
+}
+
+@media (min-width: 2010px) {
+  #tickets {
+    margin-top: 1000px;
+  }
   .sixhundred-bg-image {
     min-width: 800px;
   }
