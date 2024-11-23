@@ -180,7 +180,7 @@ const IndexPage = ({ data }) => {
         />
         <StaticImage
           src="../images/with_Rory_Scovel-min.png"
-          className={`sixhundred-text-img z-5 top-[400px] max-w-[300px]`}
+          className={`sixhundred-text-img z-5 absolute w-[100%] left-1/2 -translate-x-1/2 top-[400px] max-w-[300px]`}
           loading="eager"
           objectFit="contain"
           placeholder="none"

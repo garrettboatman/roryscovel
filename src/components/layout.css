@@ -294,7 +294,7 @@ pre tt:after {
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 350px;
+    margin-left: 180px;
   }
   .sixhundred-text {
     padding-top: 320px;
@@ -311,7 +311,7 @@ pre tt:after {
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 550px;
+    margin-left: 275px;
   }
   .sixhundred-text {
     padding-top: 320px;
@@ -329,7 +329,7 @@ pre tt:after {
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 750px;
+    margin-left: 375px;
   }
   .sixhundred-text {
     padding-top: 320px;
@@ -346,7 +346,7 @@ pre tt:after {
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 850px;
+    margin-left: 425px;
   }
   .sixhundred-text {
     padding-top: 320px;
@@ -363,7 +363,7 @@ pre tt:after {
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 950px;
+    margin-left: 475px;
   }
   .sixhundred-text {
     padding-top: 320px;
@@ -373,14 +373,14 @@ pre tt:after {
 
 @media (min-width: 2010px) {
   #tickets {
-    margin-top: 1000px;
+    margin-top: 700px;
   }
   .sixhundred-bg-image {
     min-width: 800px;
   }
   .sixhundred-text-img {
     top: 220px;
-    margin-left: 950px;
+    margin-left: 475px;
   }
   .sixhundred-text {
     padding-top: 320px;
