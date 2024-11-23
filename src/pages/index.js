@@ -178,17 +178,17 @@ const IndexPage = ({ data }) => {
           formats={["auto", "webp", "avif"]}
           alt=""
         />
+      </div>
+      <div className="sixhundred-text text-center pt-[330px] relative z-100">
         <StaticImage
           src="../images/with_Rory_Scovel-min.png"
-          className={`sixhundred-text-img z-5 relative top-[-160px] max-w-[300px]`}
+          className={`sixhundred-text-img z-5 mb-[20px] relative max-w-[300px]`}
           loading="eager"
           objectFit="contain"
           placeholder="none"
           formats={["auto", "webp", "avif"]}
           alt=""
         />
-      </div>
-      <div className="sixhundred-text pt-[500px] relative z-100">
         <h2 style={{color: "#60473B"}} className="text-[30px] font-bold text-center">10 SHOWS • 10 NIGHTS</h2>
         <h3 style={{color: "#957767"}} className="text-[22px] font-semibold text-center">JAN 8-18 &nbsp;•&nbsp; BROOKLYN, NY</h3>
         <div>
