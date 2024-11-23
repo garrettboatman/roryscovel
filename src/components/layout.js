@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
         }}
+        className="relative"
       >
         <main>{children}</main>
         <footer

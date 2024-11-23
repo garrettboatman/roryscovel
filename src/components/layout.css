@@ -2,7 +2,7 @@
   --border-radius: 4px;
   --color-text: #2c0606;
   --color-primary: #01a8e5;
-  --color-bg: #fff6e5;
+  --color-bg: #F5EBE6;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
@@ -270,4 +270,90 @@ pre tt:after {
 
 .use-spring-carousel-item {
   overflow: hidden;
+}
+
+.sixhundred-bg-image {
+
+}
+
+@media (min-width: 450px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 450px;
+  }
+  .sixhundred-text {
+    padding-top: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 350px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 350px;
+  }
+}
+
+@media (min-width: 940px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 550px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 550px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 750px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 750px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 850px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 850px;
+  }
+}
+
+@media (min-width: 1710px) {
+  .sixhundred-bg-image {
+    min-width: 800px;
+  }
+  .sixhundred-text-img {
+    top: 220px;
+    margin-left: 950px;
+  }
+  .sixhundred-text {
+    padding-top: 320px;
+    margin-left: 950px;
+  }
 }

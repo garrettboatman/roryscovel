@@ -20,7 +20,7 @@ const Show = ({ data, setTicketHover }) => {
   let tour = false;
 
   return (
-    <div className="bg-[#F1E4CB] my-4 md:rounded-xl">
+    <div className="bg-[#EED9CF] my-4 md:rounded-xl">
       <div className="flex py-4 px-5 items-center justify-between">
         <div className="text-lg leading-tight">
           <div className="text-xl tracking-tight mb-[3px]">
@@ -167,7 +167,68 @@ const IndexPage = ({ data }) => {
   //   })
 
   return (
-    <Layout>
+    <Layout className='relative'>
+      <div className="h-[800px] h-[1500px] w-[100%] mt-[-80px] absolute z-5 overflow-hidden text-center">
+        <StaticImage
+          src="../images/600_minutes-min.jpg"
+          className={`sixhundred-bg-image w-[100%] min-w-[700px] mx-auto z-4 absolute top-0 left-[-20px]`}
+          loading="eager"
+          objectFit="contain"
+          placeholder="none"
+          formats={["auto", "webp", "avif"]}
+          alt=""
+        />
+        <StaticImage
+          src="../images/with_Rory_Scovel-min.png"
+          className={`sixhundred-text-img z-5 top-[400px] max-w-[300px]`}
+          loading="eager"
+          objectFit="contain"
+          placeholder="none"
+          formats={["auto", "webp", "avif"]}
+          alt=""
+        />
+      </div>
+      <div className="sixhundred-text pt-[500px] relative z-100">
+        <h2 style={{color: "#60473B"}} className="text-[30px] font-bold text-center">10 SHOWS • 10 NIGHTS</h2>
+        <h3 style={{color: "#957767"}} className="text-[22px] font-semibold text-center">JAN 8-18 &nbsp;•&nbsp; BROOKLYN, NY</h3>
+        <div>
+        <div className="text-center mt-3">
+          <a
+
+            className={'button whatever text-lg px-5 py-2 transition-all hover:scale-[1.2]'}
+            href={'https://www.eventbrite.com/cc/600-minutes-with-rory-scovel-3750219'}
+          >
+            Get Tickets
+          </a>
+        </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className="w-full relative z-10 md:min-w-[380px] md:max-w-[480px] md:px-4 mx-auto mb-4">
+        <div className="relative mt-10 mb-[-30px]">
+          <div className="w-full text-center">
+            <span className="w-[156px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+              OTHER SHOWS
+            </span>
+          </div>
+        </div>
+        {data.allContentfulShow.nodes.map(data => {
+          if (!data.showType) {
+            return (
+              <Show
+                setTicketHover={setTicketHover}
+                key={data.contentful_id}
+                data={data}
+                showType={data.showType || ""}
+              />
+            );
+          } 
+        })}
+        <br />
+        <br />
+        <br />
+      </div>
       <div className="flex max-w-[1200px] align-top mx-auto justify-center flex-col md:flex-row">
         <div className="">
           <div
@@ -196,7 +257,7 @@ const IndexPage = ({ data }) => {
         </div>
 
 
-        <div id="tickets" className="w-full flex justify-start">
+        <div className="w-full flex justify-start">
           <div className="w-full md:min-w-[380px] md:max-w-[480px] md:px-4">
             <div className="my-8 md:my-0">
   
@@ -213,7 +274,7 @@ const IndexPage = ({ data }) => {
                 <iframe className="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/39H40-sJGW4?si=27lk84bFtvtzU84l" title="Rory Scovel Comedy Special | Religion, Sex, and a Few Things In Between" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
               </div>
 
-              <div className="bg-[#F1E4CB] mb-4 py-4 md:rounded-xl">
+              <div className="bg-[#EED9CF] mb-4 py-4 md:rounded-xl">
                 <div className="flex py-1 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     {/* <div className="text-xl tracking-tight mb-[3px] font-bold">
@@ -348,37 +409,6 @@ const IndexPage = ({ data }) => {
                 }
               })} */}
               
-              <div className="relative mt-10 mb-[-30px]">
-                <div className="w-full text-center">
-                  <span className="w-[146px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
-                    LIVE SHOWS
-                  </span>
-                </div>
-              </div>
-              {data.allContentfulShow.nodes.map(data => {
-                if (!data.showType) {
-                  return (
-                    <Show
-                      setTicketHover={setTicketHover}
-                      key={data.contentful_id}
-                      data={data}
-                      showType={data.showType || ""}
-                    />
-                  );
-                } 
-              })}
-              <div class="bg-[#F1E4CB] my-4 md:rounded-xl">
-                <div class="flex py-4 px-5 items-center justify-between">
-                    <div class="text-lg leading-tight">
-                      <div class="text-xl tracking-tight mb-[3px]">
-                          1.8.25 - 1.18.25
-                      </div>
-                      <div class="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">Union Hall</div>
-                      <div class="uppercase font-bold">Brooklyn, NY</div>
-                    </div>
-                    <div><a class="false button null text-md px-5 py-2 transition-all hover:scale-[1.2]" href="https://www.eventbrite.com/cc/600-minutes-with-rory-scovel-3750219">Tickets</a></div>
-                </div>
-              </div>
             </div>
 
               {/* <div className="relative mt-10 mb-[-30px]">
@@ -406,7 +436,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         id="art"
         className="overflow-hidden my-20 md:my-[200px] max-w-[1200px] mx-auto"
       >
@@ -428,7 +458,7 @@ const IndexPage = ({ data }) => {
         
 
         
-        {/* <div className="relative flex mt-6 md:mt-10">
+        <div className="relative flex mt-6 md:mt-10">
           <button
             className="z-10 relative left-[-15px] lg:left-[10%]"
             onClick={slideToPrevItem}
@@ -468,8 +498,8 @@ const IndexPage = ({ data }) => {
               />
             </svg>
           </button>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       
       <div
         id="penpals"
@@ -524,7 +554,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div id="contact" className="py-5 max-w-[420px] mx-auto">
-        <div className="bg-[#F1E4CB] md:rounded-lg content-container max-w-lg mx-auto py-6">
+        <div className="bg-[#EED9CF] md:rounded-lg content-container max-w-lg mx-auto py-6">
           <h2 className="font-bold text-3xl text-center uppercase">Contact</h2>
           <h3 className="text-md md:text-lg text-center">
             <a
