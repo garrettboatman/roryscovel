@@ -371,7 +371,7 @@ const IndexPage = ({ data }) => {
                 4.18.25 - 4.19.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                Desert Ridge
+                Desert Ridge Improv
               </div>
               <div className="uppercase font-bold">Phoenix, AZ</div>
             </div>
@@ -420,7 +420,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                5.15.24
+                5.15.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Empire Comedy Club
@@ -445,7 +445,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                5.16.24
+                5.16.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Empire Comedy Club
@@ -470,7 +470,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                5.17.24
+                5.17.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Empire Comedy Club
