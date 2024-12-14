@@ -231,7 +231,7 @@ const IndexPage = ({ data }) => {
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
                 className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                href={data.ticketLink}
+                href={'https://tacaw.org/calendar/comedian-rory-scovel/'}
               >
                 {"Tickets"}
               </a>
