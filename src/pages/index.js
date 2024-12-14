@@ -208,9 +208,34 @@ const IndexPage = ({ data }) => {
       <div id="tickets" className="w-full relative z-10 md:min-w-[380px] md:max-w-[480px] md:px-4 mx-auto mb-4">
         <div className="relative mt-10 mb-[-30px]">
           <div className="w-full text-center">
-            {/* <span className="w-[156px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
+            <span className="w-[156px] inline-block bold bg-[#ebf3f6] border-2 border-[#03a8e6] text-[#03a8e6] px-[15px] py-[3px] rounded-[100px] text-sm font-bold">
               OTHER SHOWS
-            </span> */}
+            </span>
+          </div>
+        </div>
+        <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+          <div className="flex py-4 px-5 items-center justify-between">
+            <div className="text-lg leading-tight">
+              <div className="text-xl tracking-tight mb-[3px]">
+                1.24.25
+              </div>
+              <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+              The Arts Campus At Willits
+              </div>
+              <div className="uppercase font-bold">Basalt, CO</div>
+            </div>
+            <div>
+              <a
+                onFocus={() => setTicketHover(true)}
+                onBlur={() => setTicketHover(false)}
+                onMouseOver={() => setTicketHover(true)}
+                onMouseOut={() => setTicketHover(false)}
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                href={data.ticketLink}
+              >
+                {"Tickets"}
+              </a>
+            </div>
           </div>
         </div>
         {data.allContentfulShow.nodes.map(data => {
