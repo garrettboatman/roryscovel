@@ -267,7 +267,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                2.6.24 - 2.8.24
+                2.6.25 - 2.8.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Punchline Comedy Club
@@ -293,7 +293,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                2.21.24 - 2.22.24
+                2.21.25 - 2.22.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Bottle Rocket Social Hall
@@ -318,7 +318,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                3.20.24 - 3.22.24
+                3.20.25 - 3.22.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Punchline Comedy Club
@@ -343,7 +343,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                3.29.24
+                3.29.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Egyptian Theater
@@ -368,7 +368,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                4.18.24 - 4.19.24
+                4.18.25 - 4.19.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Desert Ridge
@@ -381,9 +381,10 @@ const IndexPage = ({ data }) => {
                 onBlur={() => setTicketHover(false)}
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
-                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2] disabled`}
+                href="https://www.desertridgeimprov.com/events/104358"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
               >
-                {"Coming Soon"}
+                {"Tickets"}
               </a>
             </div>
           </div>
@@ -393,7 +394,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                4.25.24 - 4.26.24
+                4.25.25 - 4.26.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Wise Guys Comedy Club
@@ -406,9 +407,10 @@ const IndexPage = ({ data }) => {
                 onBlur={() => setTicketHover(false)}
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
-                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2] disabled`}
+                href="https://www.wiseguyscomedy.com/utah/salt-lake-city/the-gateway/e/rory-scovel"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
               >
-                {"Coming Soon"}
+                {"Tickets"}
               </a>
             </div>
           </div>
@@ -418,7 +420,7 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
-                5.15.24 - 5.17.24
+                5.15.24
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
                 Empire Comedy Club
@@ -431,9 +433,60 @@ const IndexPage = ({ data }) => {
                 onBlur={() => setTicketHover(false)}
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
-                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2] disabled`}
+                href="https://www.empirecomedyme.com/calendar/2025-05?day=15"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
               >
-                {"Coming Soon"}
+                {"Tickets"}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+          <div className="flex py-4 px-5 items-center justify-between">
+            <div className="text-lg leading-tight">
+              <div className="text-xl tracking-tight mb-[3px]">
+                5.16.24
+              </div>
+              <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                Empire Comedy Club
+              </div>
+              <div className="uppercase font-bold">Portland, ME</div>
+            </div>
+            <div>
+              <a
+                onFocus={() => setTicketHover(true)}
+                onBlur={() => setTicketHover(false)}
+                onMouseOver={() => setTicketHover(true)}
+                onMouseOut={() => setTicketHover(false)}
+                href="https://www.empirecomedyme.com/calendar/2025-05?day=16"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+              >
+                {"Tickets"}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+          <div className="flex py-4 px-5 items-center justify-between">
+            <div className="text-lg leading-tight">
+              <div className="text-xl tracking-tight mb-[3px]">
+                5.17.24
+              </div>
+              <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                Empire Comedy Club
+              </div>
+              <div className="uppercase font-bold">Portland, ME</div>
+            </div>
+            <div>
+              <a
+                onFocus={() => setTicketHover(true)}
+                onBlur={() => setTicketHover(false)}
+                onMouseOver={() => setTicketHover(true)}
+                onMouseOut={() => setTicketHover(false)}
+                href="https://www.empirecomedyme.com/calendar/2025-05?day=17"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+              >
+                {"Tickets"}
               </a>
             </div>
           </div>
