@@ -434,7 +434,7 @@ const IndexPage = ({ data }) => {
               <a
                 onFocus={() => setTicketHover(true)}
                 onBlur={() => setTicketHover(false)}
-                href="https://urldefense.com/v3/__https://link.dice.fm/Zafd636ddb30"
+                href="https://link.dice.fm/Zafd636ddb30"
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
                 className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
