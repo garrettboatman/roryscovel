@@ -281,7 +281,7 @@ const IndexPage = ({ data }) => {
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
                 className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                href="https://www.ticketmaster.com/rory-scovel-tickets/artist/1488444?venueId=476361"
+                href="https://www.ticketmaster.com/rory-scovel-tickets/artist/1488444"
               >
                 {"Tickets"}
               </a>
@@ -410,7 +410,7 @@ const IndexPage = ({ data }) => {
                 onBlur={() => setTicketHover(false)}
                 onMouseOver={() => setTicketHover(true)}
                 onMouseOut={() => setTicketHover(false)}
-                href="https://www.ticketmaster.com/rory-scovel-tickets/artist/1488444"
+                href="https://www.ticketmaster.com/rory-scovel-tickets/artist/1488444?venueId=476361"
                 className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
               >
                 {"Tickets"}
