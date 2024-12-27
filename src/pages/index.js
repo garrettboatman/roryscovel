@@ -397,6 +397,32 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
+                3.13.25 - 3.15.25
+              </div>
+              <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+              Comedy at The Carlson
+              </div>
+              <div className="uppercase font-bold">Rochester, NY</div>
+            </div>
+            <div>
+              <a
+                onFocus={() => setTicketHover(true)}
+                onBlur={() => setTicketHover(false)}
+                onMouseOver={() => setTicketHover(true)}
+                onMouseOut={() => setTicketHover(false)}
+                href="https://ci.ovationtix.com/35843/production/1223234"
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+              >
+                {"Tickets"}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+          <div className="flex py-4 px-5 items-center justify-between">
+            <div className="text-lg leading-tight">
+              <div className="text-xl tracking-tight mb-[3px]">
                 3.20.25 - 3.22.25
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
