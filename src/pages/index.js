@@ -293,6 +293,32 @@ const IndexPage = ({ data }) => {
           <div className="flex py-4 px-5 items-center justify-between">
             <div className="text-lg leading-tight">
               <div className="text-xl tracking-tight mb-[3px]">
+                2.19.25
+              </div>
+              <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+              Diana Wortham Theatre
+              </div>
+              <div className="uppercase font-bold">Asheville, NC</div>
+            </div>
+            <div>
+              <a
+                onFocus={() => setTicketHover(true)}
+                onBlur={() => setTicketHover(false)}
+                onMouseOver={() => setTicketHover(true)}
+                href="https://www.worthamarts.org/events/rory-scovel-and-friends/"
+                onMouseOut={() => setTicketHover(false)}
+                className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+              >
+                {"Tickets"}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+          <div className="flex py-4 px-5 items-center justify-between">
+            <div className="text-lg leading-tight">
+              <div className="text-xl tracking-tight mb-[3px]">
                 2.21.25 <span className="font-normal text-sm">(7pm)</span>
               </div>
               <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
