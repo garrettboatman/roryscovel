@@ -175,15 +175,15 @@ const IndexPage = ({ data }) => {
             // className="md:self-end md:h-[calc(100vh_-_60px)] md:sticky md:top-[20px]"
           >
             <StaticImage
-              src="../images/Rory_Scovel_Special_1.jpg"
-              className={`mx-2 h-[100%] ${ticketHover ? `!hidden` : ``}`}
+              src="../images/Rory_Scovel_Live.jpg"
+              className={`mx-2 h-[100%]`}
               loading="eager"
               objectFit="contain"
               placeholder="none"
               formats={["auto", "webp", "avif"]}
               alt=""
             />
-            <StaticImage
+            {/* <StaticImage
               src="../images/Rory_Scovel_Special_1.jpg"
               className={`mx-2 h-[100%] ${!ticketHover ? `!hidden` : ``}`}
               loading="eager"
@@ -191,7 +191,7 @@ const IndexPage = ({ data }) => {
               placeholder="none"
               formats={["auto", "webp", "avif"]}
               alt=""
-            />
+            /> */}
           </div>
         </div>
 
@@ -467,31 +467,6 @@ const IndexPage = ({ data }) => {
                   </span>
                 </div>
               </div>
-              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
-                <div className="flex py-4 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      2.6.25 - 2.8.25
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Punchline Comedy Club
-                    </div>
-                    <div className="uppercase font-bold">Sacramento, CA</div>
-                  </div>
-                  <div>
-                    <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      onMouseOut={() => setTicketHover(false)}
-                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                      href="https://www.ticketmaster.com/rory-scovel-tickets/artist/1488444"
-                    >
-                      {"Tickets"}
-                    </a>
-                  </div>
-                </div>
-              </div>
 
               <div className="bg-[#EED9CF] my-4 md:rounded-xl">
                 <div className="flex py-4 px-5 items-center justify-between">
@@ -761,6 +736,166 @@ const IndexPage = ({ data }) => {
                 <div className="flex py-4 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     <div className="text-xl tracking-tight mb-[3px]">
+                      4.28.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Sugar Club
+                    </div>
+                    <div className="uppercase font-bold">Dublin, Ireland</div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://www.ticketmaster.ie/artist/1488444?venueId=198345"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      4.30.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1"></div>
+                    <div className="uppercase font-bold">Berlin, Germany</div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      // href="https://www.ticketmaster.ie/artist/1488444?venueId=198345"
+                      className={`button disabled standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Coming Soon"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      5.1.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Club Haug
+                    </div>
+                    <div className="uppercase font-bold">
+                      Rotterdam, Netherlands
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://comedyclubhaug.com/shows/rory-scovel-111499617"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      5.2.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Toomler
+                    </div>
+                    <div className="uppercase font-bold">
+                      Amsterdam, Netherlands
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://app.guts.tickets/ah2hi4/nbex0s"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      5.3.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Y Tabernacl
+                    </div>
+                    <div className="uppercase font-bold">
+                      Machynlleth, Wales
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://machcomedyfest.co.uk/show/2025/rory-scovels-should-i-live-here-tour/"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      5.6.25 - 5.10.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Soho Theatre
+                    </div>
+                    <div className="uppercase font-bold">London, UK</div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://sohotheatre.com/events/rory-scovels-should-i-live-here-tour/"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
                       5.15.25
                     </div>
                     <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
@@ -826,6 +961,31 @@ const IndexPage = ({ data }) => {
                       onMouseOut={() => setTicketHover(false)}
                       href="https://www.empirecomedyme.com/calendar/2025-05?day=17"
                       className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
+                      6.6.25 - 6.7.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Commonwealth Sanctuary
+                    </div>
+                    <div className="uppercase font-bold">Cincinnati, OH</div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                      href="https://www.simpletix.com/e/rory-scovel-presented-by-commonwealth-sanc-tickets-201952"
                     >
                       {"Tickets"}
                     </a>
