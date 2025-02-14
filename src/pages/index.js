@@ -764,7 +764,9 @@ const IndexPage = ({ data }) => {
                     <div className="text-xl tracking-tight mb-[3px]">
                       4.30.25
                     </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1"></div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Kookaburra
+                    </div>
                     <div className="uppercase font-bold">Berlin, Germany</div>
                   </div>
                   <div>
@@ -773,10 +775,10 @@ const IndexPage = ({ data }) => {
                       onBlur={() => setTicketHover(false)}
                       onMouseOver={() => setTicketHover(true)}
                       onMouseOut={() => setTicketHover(false)}
-                      // href="https://www.ticketmaster.ie/artist/1488444?venueId=198345"
-                      className={`button disabled standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                      href="https://www.eventbrite.de/e/rory-scovel-should-i-live-here-2025-stand-up-tour-berlin-tickets-1249186653909"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
                     >
-                      {"Coming Soon"}
+                      {"Tickets"}
                     </a>
                   </div>
                 </div>
