@@ -898,6 +898,32 @@ const IndexPage = ({ data }) => {
                 <div className="flex py-4 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     <div className="text-xl tracking-tight mb-[3px]">
+                      5.12.25
+                    </div>
+                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
+                      Fairfield Social Club
+                    </div>
+                    <div className="uppercase font-bold">Manchester, UK</div>
+                  </div>
+                  <div>
+                    <a
+                      onFocus={() => setTicketHover(true)}
+                      onBlur={() => setTicketHover(false)}
+                      onMouseOver={() => setTicketHover(true)}
+                      onMouseOut={() => setTicketHover(false)}
+                      href="https://www.seetickets.com/event/rory-scovel-should-i-live-here/fairfield-social-club/3349790"
+                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
+                    >
+                      {"Tickets"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
+                <div className="flex py-4 px-5 items-center justify-between">
+                  <div className="text-lg leading-tight">
+                    <div className="text-xl tracking-tight mb-[3px]">
                       5.15.25
                     </div>
                     <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
