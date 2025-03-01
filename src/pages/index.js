@@ -472,65 +472,12 @@ const IndexPage = ({ data }) => {
                 <div className="flex py-4 px-5 items-center justify-between">
                   <div className="text-lg leading-tight">
                     <div className="text-xl tracking-tight mb-[3px]">
-                      2.19.25
+                      3.12.25
                     </div>
                     <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Diana Wortham Theatre
+                      Buntport Theater
                     </div>
-                    <div className="uppercase font-bold">Asheville, NC</div>
-                  </div>
-                  <div>
-                    <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      href="https://www.worthamarts.org/events/rory-scovel-and-friends/"
-                      onMouseOut={() => setTicketHover(false)}
-                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                    >
-                      {"Tickets"}
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
-                <div className="flex py-4 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      2.21.25 <span className="font-normal text-sm">(7pm)</span>
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Bottle Rocket Social Hall
-                    </div>
-                    <div className="uppercase font-bold">Pittsburgh, PA</div>
-                  </div>
-                  <div>
-                    <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      href="https://app.opendate.io/e/rory-scovel-friday-early-february-21-2025-562008"
-                      onMouseOut={() => setTicketHover(false)}
-                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                    >
-                      {"Tickets"}
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
-                <div className="flex py-4 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      2.21.25{" "}
-                      <span className="font-normal text-sm">(9:30pm)</span>
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Bottle Rocket Social Hall
-                    </div>
-                    <div className="uppercase font-bold">Pittsburgh, PA</div>
+                    <div className="uppercase font-bold">Denver, CO</div>
                   </div>
                   <div>
                     <a
@@ -538,60 +485,7 @@ const IndexPage = ({ data }) => {
                       onBlur={() => setTicketHover(false)}
                       onMouseOver={() => setTicketHover(true)}
                       onMouseOut={() => setTicketHover(false)}
-                      href="https://app.opendate.io/e/rory-scovel-friday-late-february-21-2025-562726"
-                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                    >
-                      {"Tickets"}
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
-                <div className="flex py-4 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      2.22.25 <span className="font-normal text-sm">(7pm)</span>
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Bottle Rocket Social Hall
-                    </div>
-                    <div className="uppercase font-bold">Pittsburgh, PA</div>
-                  </div>
-                  <div>
-                    <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      onMouseOut={() => setTicketHover(false)}
-                      href="https://app.opendate.io/e/rory-scovel-saturday-early-february-22-2025-560832"
-                      className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
-                    >
-                      {"Tickets"}
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#EED9CF] my-4 md:rounded-xl">
-                <div className="flex py-4 px-5 items-center justify-between">
-                  <div className="text-lg leading-tight">
-                    <div className="text-xl tracking-tight mb-[3px]">
-                      2.22.25{" "}
-                      <span className="font-normal text-sm">(9:30pm)</span>
-                    </div>
-                    <div className="uppercase text-[16px] text-[#766363] mb-[5px] pr-1">
-                      Bottle Rocket Social Hall
-                    </div>
-                    <div className="uppercase font-bold">Pittsburgh, PA</div>
-                  </div>
-                  <div>
-                    <a
-                      onFocus={() => setTicketHover(true)}
-                      onBlur={() => setTicketHover(false)}
-                      onMouseOver={() => setTicketHover(true)}
-                      onMouseOut={() => setTicketHover(false)}
-                      href="https://app.opendate.io/e/rory-scovel-saturday-late-february-22-2025-562729"
+                      href="https://buntport.com/show/an-hour-with-rory-scovel-march-2025"
                       className={`button standard text-md px-5 py-2 transition-all hover:scale-[1.2]`}
                     >
                       {"Tickets"}
