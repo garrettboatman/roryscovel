@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className="flex pb-2 px-5 items-center justify-between">
                   <a
-                    href="https://punchup.live/roryscovel/tickets"
+                    href="https://punchup.live/roryscovel/fully-improvised-show-extended-clip-baltimore-91124/checkout"
                     className={`button penpals text-lg mx-auto my-2 px-8 py-3 transition-all hover:scale-[1.2]`}
                   >
                     {"Join Mailing List"}
